@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+    height: 100vh;
+}
+
+section::before {
+    content: '';
+    background: linear-gradient(to bottom, #f44336, #9C27B0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(30% at right 70%);
+}
+
+section::after {
+    content: '';
+    background: linear-gradient(to bottom, #03A9F4, #3F51B5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(20% at 10% 10%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.container .card {
+    width: 400px;
+    height: 500px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    position: relative;
+}
+
+.container .card .content .imgbox {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container .card .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container .card .content .contentbox {
+    text-align: center;
+    margin: 20px 10px;
+    color: #FFF;
+}
+
+.container .card .content .contentbox h3 {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.container .card .content .contentbox p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.container .card .icons {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 70px;
+}
+
+.container .card .icons li {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    transform: translateY(45px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.container .card .icons li img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .card:hover .icons li {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.container .card:hover .content {
+    opacity: 1;
+    transform: translateY(-25px);
+}
