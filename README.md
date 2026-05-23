@@ -51,7 +51,7 @@ members-page/
 ## 🤝 Let's Connect & Collaborate
 
 <p align="center">
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank">
+  <a href="https://www.linkedin.com/in/hosein-razghandi" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
@@ -59,7 +59,7 @@ members-page/
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="mailto:YOUR_EMAIL@gmail.com">
+  <a href="mailto:hoseinrazqandi7@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
 </p>
